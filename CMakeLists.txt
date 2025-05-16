@@ -117,10 +117,6 @@ configure_pkg_config_file(ogg.pc.in)
 
 if(INSTALL_CMAKE_PACKAGE_MODULE)
     set(CMAKE_INSTALL_CONFIGDIR ${CMAKE_INSTALL_LIBDIR}/cmake/Ogg)
-    install(EXPORT OggTargets
-        DESTINATION ${CMAKE_INSTALL_CONFIGDIR}
-        NAMESPACE Ogg::
-    )
 
     include(CMakePackageConfigHelpers)
 
